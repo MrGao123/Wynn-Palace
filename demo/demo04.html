@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>日期插件</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap-datetimepicker.min.css"/>
+</head>
+<body>
+<!--<div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+    <input class="span2" size="16" type="text" value="12-02-2012">
+    <span class="add-on"><i class="icon-th"></i></span>
+</div>-->
+<div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+    <input class="span2" size="16" type="text">
+    <span class="add-on"><i class="icon-remove"></i></span>
+    <span class="add-on"><i class="icon-th"></i></span>
+</div>
+<!--<input class="span2" size="16" type="text" >-->
+<script src="../lib/jquery/jquery-1.12.4.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+<script src="../lib/bootstrap/js/bootstrap-datetimepicker.fr.js"></script>
+<script src="../lib/bootstrap/js/bootstrap-datetimepicker.zh-CN.js"></script>
+<script type="text/javascript">
+    var date = new Date();
+    var start = new Date().toLocaleString().split(" ")[0].split("/").join("-");
+
+    $('.span2').datetimepicker({
+        format:"dd/mm/yy",
+        autoclose: 1,
+        startView: 2,
+        maxView:2,
+        forceParse: 0,
+        showMeridian: 1,
+        language:"zh-CN",
+        minView:2,
+        startDate:start
+    });
+</script>
+</body>
+</html>

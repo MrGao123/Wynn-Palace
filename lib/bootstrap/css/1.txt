@@ -1,0 +1,64 @@
+1.引入文件
+
+css：bootstrap.min.css bootstrap-datetimepicker.min.css
+
+js:jquery.min.js   bootstrap.min.js  bootstrap-datatimepicker.fr.js
+
+2.  
+
+将所有文件引入完成后，就开始设置日期控件吧。
+这是第一种样式。当然，你可以只要input就可以了。
+<div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+   <input class="span2" size="16" type="text" value="12-02-2012">
+   <span class="add-on"><i class="icon-th"></i></span>
+</div>    
+第二种样式，带有重置按钮（用于清空输入框）的组件模版：
+<div class="input-append date" id="datetimepicker" data-date="12-02-2012" data-date-format="dd-mm-yyyy">
+   <input class="span2" size="16" type="text" value="12-02-2012">
+   <span class="add-on"><i class="icon-remove"></i></span>
+   <span class="add-on"><i class="icon-th"></i></span>
+</div>
+i的作用就是两个小图标，若不要可以删去。  
+
+
+最简洁的样式，只有input,点击弹出选择器：
+<input class="span2" size="16" type="text" value="12-02-2012">
+当然，只有这些是无法弹出日期选择器的，还需要js来激活。
+
+3.这里是最重要的一步，js激活日期选择器！<script type="text/javascript">$('你的input的class或id').datetimepicker({//一堆参数    });</script>将这个写在你的页面内，至于参数，一会再介绍。这样就可以激活你的日期选择器了，点击input便可以弹出选择器。
+
+4.日期选择器的参数设置：
+format
+weekStart
+startDate
+endDate
+daysOfWeekDisabled
+autoclose
+startView
+minView
+maxView
+todayBtn
+todayHighlight
+keyboardNavigation
+language
+forceParse
+minuteStep
+pickerPosition
+viewSelect
+showMeridian
+initialDate
+这些属性不用全部设置，但有些是必须的，比如format。
+这里是小编所使用的一款日期选择器的初始化设置：
+$('.date').datetimepicker({
+   format:yyyy-mm-dd,
+        weekStart: 1,
+        todayBtn:  1,
+autoclose: 1,
+todayHighlight: 1,
+startView: 2,
+forceParse: 0,
+        showMeridian: 1
+    });
+
+
+

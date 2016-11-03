@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html,body {
+            width: 100%;
+            height: 100%;
+        }
+        .banner {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: pink;
+        }
+        .main {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 1000px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+<div class="banner">
+<button>
+    更多
+</button>
+</div>
+<div class="main">
+
+</div>
+<script src="lib/jquery/jquery-1.12.4.js"></script>
+<script>
+    $("button").on("click",function(){
+        console.log(1);
+        $("body").scrollTop(600);
+        console.log($("body").scrollTop());
+    });
+</script>
+</body>
+</html>

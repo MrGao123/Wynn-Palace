@@ -1,0 +1,1199 @@
+/*topBar*/
+.yl_topbar {
+    height: 80px;
+    background-color: #2F1810;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.yl_topbar .topbar_header {
+    position: relative;
+    float: left;
+}
+
+.yl_topbar .topbar_header .topbar_brand {
+    display: block;
+    text-indent: -9999px;
+    width: 190px;
+    height: 110px;
+    padding: 20px 25px;
+    background: #2F1810 url('../images/logo.png') no-repeat center;
+    background-size: contain;
+    background-origin: content-box;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    z-index: 1100;
+}
+.yl_topbar .topbar_header .topbar_brand_md {
+    height: 80px;
+    padding: 13px;
+}
+.yl_topbar .topbar_header .topbar_toggle {
+    display: none;
+    width: 40px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1200;
+}
+
+.yl_topbar .topbar_header .topbar_toggle .icon-bar {
+    display: block;
+    background-color: #888;
+    height: 4px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.yl_topbar .navbar-default .topbar_toggle .icon-bar:last-child {
+    margin-bottom: 0;
+}
+
+.yl_topbar .topbar_header .topbar_toggle:hover .icon-bar,
+.yl_topbar .topbar_header .topbar_toggle:focus .icon-bar {
+    background-color: #fff;
+}
+
+.yl_topbar .topbar_header .icon_info {
+    display: none;
+    position: absolute;
+    width: 42px;
+    height: 58px;
+    background: url(../images/ico-info.png) no-repeat;
+    right: 0;
+    top: 50%;
+    margin-top: -29px;
+    z-index: 1200;
+}
+
+.topbar_right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    padding-right: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.yl_topbar .topbar_right .book {
+    display: none;
+    font-size: 15px;
+    color: #fff;
+    padding: 10px 15px;
+    padding-right: 24px;
+    text-align: center;
+    background-color: #b32625;
+    border: 0 none;
+    cursor: pointer;
+    float: right;
+    position: relative;
+}
+
+.yl_topbar .topbar_right .book .arrow {
+    border-color: #fff;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 16px;
+    right: 8px;
+}
+
+.yl_topbar .topbar_right .book .arrowActive {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 14px;
+}
+
+.yl_topbar .topbar_right .book:hover {
+    background-image: linear-gradient(to bottom, #c42b2a, #8d201e);
+}
+
+.yl_topbar .topbar_right .topbar_introduce_box {
+    width: 100%;
+    float: right;
+    margin-top: 19px;
+    position: relative;
+}
+
+.topbar_introduce_box .topbar_introduce_info {
+    width: 455px;
+    position: absolute;
+    right: 18px;
+    top: 100%;
+    background-color: #2F1810;
+}
+
+.topbar_introduce_box .topbar_introduce_info .introduce_content {
+    display: none;
+    padding: 14px 0;
+}
+
+.introduce_content .content {
+    width: 215px;
+    border-right: 1px solid #3D2D27;
+}
+
+.introduce_content .thumb {
+    width: 235px;
+    padding: 0 20px;
+}
+
+.introduce_content .thumb li {
+    display: none;
+}
+
+.introduce_content .thumb > .active {
+    display: block;
+}
+
+.introduce_content .thumb a {
+    display: block;
+}
+
+.introduce_content .thumb a img {
+    width: 100%;
+}
+
+.introduce_content .content a {
+    display: block;
+    padding: 6px 15px;
+}
+
+.introduce_content .content a:hover {
+    background-color: #26130D;
+}
+
+.yl_topbar .topbar_right .topbar_introduce {
+    width: 100%;
+    text-align: right;
+}
+
+.yl_topbar .topbar_right .topbar_introduce li {
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.yl_topbar .topbar_right .topbar_introduce li:last-child {
+    padding-right: 0;
+}
+
+.yl_topbar .topbar_right .topbar_introduce_box li a {
+    color: #C8C1BF;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.yl_topbar .topbar_right .topbar_introduce_box li a:hover {
+    color: #fff;
+}
+
+.topbar_nav li {
+    float: left;
+    padding: 0 15px;
+}
+
+.topbar_nav a {
+    display: block;
+    color: #ACA39F;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.topbar_nav a:hover {
+    color: #fff;
+}
+
+.topbar_nav .dropdown-toggle {
+    position: relative;
+    width: 115px;
+    text-align: center;
+}
+
+.topbar_nav .dropdown-toggle:hover > a {
+    color: #fff;
+}
+
+.topbar_nav .dropdown-toggle:hover .arrow {
+    border-color: #fff;
+}
+
+.topbar_nav .dropdown-toggle .icon_ch {
+    position: absolute;
+    left: 9px;
+    top: 4px;
+    width: 16px;
+    height: 12px;
+    background: url(../images/lang-zh-hans.jpg) no-repeat;
+}
+
+.yl_topbar .arrow {
+    position: absolute;
+    right: 12px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-right: 2px solid #705d40;
+    border-bottom: 2px solid #705d40;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.dropdown .arrowActive {
+    -webkit-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    top: 8px;
+}
+.topbar_nav .yl_dropdown-menu {
+    width: 115px;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    border-top: 1px solid #5B442F;
+    background-color: #2F1810;
+    margin: 2px 0;
+    display: none;
+    z-index: 1100;
+}
+
+.icon_lang {
+    position: absolute;
+    left: 15px;
+    top: 14px;
+    width: 16px;
+    height: 10px;
+}
+
+.topbar_nav .yl_dropdown-menu li {
+    width: 100%;
+    padding: 9px 0 9px 37px;
+    text-align: left;
+    position: relative;
+}
+
+li .yl_dropdown-menu {
+    /*display: none;*/
+}
+
+.topbar_nav .discount {
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+}
+
+.discount img {
+    height: 12px;
+    display: block;
+    margin-top: -3px;
+}
+
+.topbar_right .button {
+    width: 80px;
+    height: 40px;
+    background-color: #847b76;
+    padding: 10px;
+    color: #fff;
+    margin-right: 1px;
+    border: 0 none;
+    display: block;
+    float: left;
+    font-size: 12px;
+    text-align: left;
+    cursor: pointer;
+}
+
+.topbar_nav li.button {
+    width: auto;
+    background-color: #5B442F;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-right: 10px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    margin-top: -10px;
+}
+
+.topbar_nav li.button:hover {
+    background-color: #705d40;
+}
+
+.topbar_nav li.button a {
+    color: #fff;
+}
+
+.yl_topbar .topbar_right .topbar_form .book {
+    display: block;
+    width: auto;
+    float: left;
+}
+
+.topbar_form .edit {
+    display: block;
+    float: left;
+    width: 15px;
+    height: 40px;
+    padding: 0 20px;
+    background: url(../images/ico-edit.png) no-repeat center;
+}
+
+/*日历*/
+.datetimepicker {
+    margin-top: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #847b76;
+    padding: 5px;
+    font-size: 12px;
+    color: #fff;
+}
+
+.datetimepicker::before, .datetimepicker::after {
+    display: none;
+}
+
+.datetimepicker thead tr:first-child th:hover, .datetimepicker tfoot th:hover {
+    background-color: transparent !important;
+}
+
+.datetimepicker table tr td.day:hover {
+    background-color: transparent;
+}
+
+.datetimepicker table tr td.active:active, .datetimepicker table tr td.active:hover:active, .datetimepicker table tr td.active.disabled:active, .datetimepicker table tr td.active.disabled:hover:active, .datetimepicker table tr td.active.active, .datetimepicker table tr td.active:hover.active, .datetimepicker table tr td.active.disabled.active, .datetimepicker table tr td.active.disabled:hover.active {
+    background-color: #c42b2a;
+    background-image: none;
+}
+
+.datetimepicker table tr td.old {
+    visibility: hidden;
+}
+
+.datetimepicker table tr td.new {
+    display: none;
+}
+
+.datetimepicker thead tr:first-child th.prev,
+.datetimepicker thead tr:first-child th.next {
+    visibility: visible !important;
+}
+
+.datetimepicker thead tr:first-child th.prev i,
+.datetimepicker thead tr:first-child th.next i {
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    padding: 0;
+    background: url("../images/btn-next-prev-cal.png") left no-repeat;
+}
+
+.datetimepicker thead tr:first-child th.next i {
+    background-position: right;
+}
+
+/*遮罩层*/
+.mask {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2000;
+}
+
+/*mob_topbar*/
+.mob_topbar {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3000;
+    width: 50%;
+    height: 100%;
+    min-width: 250px;
+    background-color: #2f1810 !important;
+    overflow: hidden;
+}
+
+.mob_topbar a {
+    display: block;
+    color: #ACA39F;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    font-size: 21px;
+    position: relative;
+}
+
+.mob_topbar a:hover {
+    color: #fff;
+}
+
+.mob_topbar_top {
+    border-bottom: 2px solid #3a2721;
+}
+
+.mob_topbar_top > li {
+    position: relative;
+}
+
+.mob_topbar_top .myDropDown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    border: 2px solid #3c2c27;
+    padding: 30px 20px;
+    background-color: #23110d;
+    z-index: 4000;
+}
+
+.mob_topbar_top .myDropDown li {
+    margin: 12px 0;
+    position: relative;
+}
+
+.mob_topbar_top .myDropDown li input,
+.mob_topbar_top .myDropDown li select {
+    display: block;
+    width: 100%;
+    border: 0 none;
+    padding: 12px;
+    color: #fff;
+    font-size: 21px;
+    background-color: #847b76;
+}
+
+.mob_topbar_top .myDropDown li input {
+    background: #847b76 url(../images/ico-input-date.png) no-repeat right center;
+    background-size: 15%;
+    padding-left: 35%;
+}
+
+.mob_topbar_top .myDropDown li select {
+    display: inline-block;
+    width: 48%;
+    float: left;
+    padding-left: 36%;
+    margin-right: 4%;
+}
+
+.mob_topbar_top .myDropDown li span {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: #fff;
+}
+
+.mob_topbar_top .myDropDown li span.custom {
+    left: 56%;
+}
+
+.mob_topbar_top .myDropDown li select:nth-child(2) {
+    margin-right: 0;
+}
+
+.mob_topbar_top .myDropDown li [type="submit"] {
+    background-color: #b32625;
+    padding-left: 12px;
+    cursor: pointer;
+}
+
+.mob_topbar_top .btn-booking {
+    float: right;
+    width: 30px;
+    height: 30px;
+    background: url(../images/btn-booking.png);
+    background-size: contain;
+}
+
+.mob_topbar_top > li > a {
+    display: block;
+    padding: 23px 33px;
+    text-align: left;
+}
+
+.mob_topbar_top > li:nth-child(1) > a {
+    padding: 25px 33px;
+    color: #fff;
+    background-color: #b32625;
+    font-size: 24px;
+}
+
+.mob_topbar_top > li:nth-child(1) > a:hover,
+.mob_topbar_lang > li:nth-child(1) > a:hover,
+.mob_topbar_top .myDropDown li [type="submit"] {
+    background: none;
+    background-image: linear-gradient(to bottom, #c42b2a, #8d201e);
+}
+
+.mob_topbar_lang {
+    margin-top: 40px;
+    border-bottom: 2px solid #3a2721;
+    text-align: center;
+}
+
+.mob_topbar_lang li:nth-child(1) a,
+.mob_topbar_lang li:nth-child(2) a {
+    width: 80%;
+    margin: 10px 10%;
+    padding: 18px 15px;
+    text-align: center;
+}
+
+.mob_topbar_lang li:nth-child(1) a {
+    background-color: #b32625;
+}
+
+.mob_topbar_lang li:nth-child(2) a {
+    background-color: #5B442F;
+}
+
+.mob_topbar_lang li:nth-child(2) a:hover {
+    background-color: #705d40;
+}
+
+.mob_topbar_lang li:nth-child(1) a img {
+    height: 13px;
+}
+
+.mob_topbar_lang .icon_lang {
+    width: 30px;
+    height: 20px;
+    background-size: contain;
+    left: 33px;
+    top: 13px;
+}
+
+.mob_topbar_lang li a {
+    display: block;
+    padding: 8px 78px;
+    text-align: left;
+    position: relative;
+}
+
+.mob_topbar_aboutus {
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+
+.mob_topbar_aboutus li a {
+    display: block;
+    padding: 8px 33px;
+    text-align: left;
+}
+
+.map_image {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 93%;
+    z-index: 4000;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.map_image img {
+    width: 100%;
+}
+
+.map_image_close {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 6%;
+    top: 8%;
+    cursor: pointer;
+}
+
+/*banner*/
+.banner {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.banner > .banner_images {
+    width: 100%;
+    height: 100%;
+}
+
+.banner > .banner_images > ul {
+    height: 100%;
+    position: relative;
+}
+
+.banner > .banner_images > ul > li {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.banner > .banner_images > ul > li:nth-child(1) {
+    opacity: 1;
+}
+
+.banner > .banner_images > ul > li > a {
+    display: block;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.banner > .banner_images > ul > li > a > img {
+    display: block;
+    width: 100%;
+}
+
+.banner_images > ul > li > a > .banner_mask {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.banner_mask_con {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    width: 100%;
+}
+
+.banner_images > ul > li > a .banner_images_tit {
+    display: block;
+    text-align: center;
+    font-size: 48px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.banner_images > ul > li > a .banner_images_link {
+    display: inline-block;
+    padding: 5px 18px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #87704E;
+}
+
+.banner_images > ul > li > a .banner_images_link:hover {
+    opacity: 0.7;
+}
+
+.banner > .banner_images > ul > li:nth-child(2) > a {
+    background-image: url(../images/banner02.jpg);
+}
+
+.banner > .banner_images > ul > li:nth-child(3) > a {
+    background-image: url(../images/banner03.jpg);
+}
+
+.banner > .banner_more {
+    height: 30px;
+    line-height: 30px;
+    background-color: #2F1810;
+    text-align: center;
+    position: relative;
+}
+
+.banner > .banner_more > a {
+    color: #6e5e58;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+    position: relative;
+    padding: 0 20px;
+}
+
+.banner > .banner_more > a::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 6px;
+    background: url(../images/ico-scroll-down.png) no-repeat;
+    width: 11px;
+    height: 8px;
+    background-size: 11px 8px;
+}
+
+.banner > .banner_more > a:hover {
+    color: #ffffff;
+}
+
+.banner > .banner_more > .arrow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0 10px;
+    color: #a29995;
+}
+
+.banner > .banner_more > .arrow > div {
+    display: inline-block;
+}
+
+.banner > .banner_more > .arrow > div:nth-child(2n-1) {
+    width: 8px;
+    height: 13px;
+    background-size: 8px 13px;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.banner > .banner_more > .arrow > .arrow_left {
+    background: url(../images/ico-arrow-left.png) no-repeat center;
+}
+
+.banner > .banner_more > .arrow > .arrow_right {
+    background: url(../images/ico-arrow-right.png) no-repeat center;
+}
+
+/*main*/
+.yl_main {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background-color: #2F1810;
+    z-index: 999;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.yl_main_title {
+    padding: 30px 50px 85px;
+    position: relative;
+    overflow: hidden;
+}
+
+.yl_main_title::before {
+    content: "";
+    position: absolute;
+    right: 83%;
+    bottom: -320px;
+    width: 939px;
+    height: 590px;
+    background: url(../images/bg-left.png) no-repeat center;
+}
+
+.yl_main_title::after {
+    content: "";
+    position: absolute;
+    left: 86%;
+    bottom: -95px;
+    width: 863px;
+    height: 313px;
+    background: url(../images/bg-right.png) no-repeat center;
+}
+
+.yl_main_title > .title {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 34px;
+    color: #fff;
+    background: url("../images/main_title.png") no-repeat center;
+    background-size: contain;
+}
+
+.yl_main_title > .desc {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.yl_main_content {
+
+}
+
+.yl_main_content > .main_content_left {
+    float: left;
+    width: 50%;
+    padding-right: 3px;
+}
+
+.yl_main_content > .main_content_right {
+    float: right;
+    width: 50%;
+    padding-left: 3px;
+}
+
+.yl_main_content li {
+    float: left;
+    width: 50%;
+}
+
+.main_content_left li:nth-child(3) {
+    width: 100%;
+}
+
+.main_content_right li:nth-child(1) {
+    width: 100%;
+}
+
+.yl_main_content li > a {
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+/*.yl_main_content li > a .overDiv{
+    width:100%;
+    height:100%;
+    backgroundColor:rgba(0,0,0,.5);
+    position:absolute;
+    cursor:pointer;
+}*/
+.yl_main_content li > a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/brick-shadow.png) repeat-x bottom;
+}
+
+.yl_main_content > .main_content_right > li:nth-child(2) > a::before {
+    background: none;
+}
+
+.yl_main_content > .main_content_right > li:nth-child(2) > a::after {
+    display: none;
+}
+
+.yl_main_content li > a::after {
+    content: '水疗中心';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 15px;
+    color: #988C7F;
+    font-size: 16px;
+}
+
+.yl_main_content > .main_content_left > li:nth-child(1) > a::after {
+    content: '创意花艺布置';
+}
+
+.yl_main_content > .main_content_left > li:nth-child(2) > a::after {
+    content: '水疗中心';
+}
+
+.yl_main_content > .main_content_left > li:nth-child(3) > a::after {
+    content: '酒店住宿';
+}
+
+.yl_main_content > .main_content_right > li:nth-child(1) > a::after {
+    content: '瑰丽开幕礼遇';
+}
+
+.yl_main_content > .main_content_right > li:nth-child(3) > a::after {
+    content: '休闲美食';
+}
+
+.yl_main_content li > a > img {
+    display: block;
+    width: 100%;
+}
+
+.yl_main_content li > a > .slide_box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+}
+
+.yl_main_content li > a > .slide_box p {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 5%;
+    left: 50%;
+    top: 50%;
+    font-size: 20px;
+    color: #fff;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    -ms-transform: translate3d(-50%, -50%, 0);
+    -o-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+/*footer*/
+.yl_footer {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    padding: 10px 15px 0;
+    background-color: #2F1810;
+    color: #ACA39F;
+    font-size: 12px;
+}
+
+.yl_footer > div {
+    padding: 7px 0;
+    text-align: right;
+}
+
+.yl_footer > div > a {
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.yl_footer > div > a:hover {
+    color: #fff;
+}
+
+.yl_footer > div > a:nth-child(n+8) {
+    width: 14px;
+    height: 14px;
+    /*background: url(../images/icon-fb.jpg) no-repeat;*/
+    background-repeat: no-repeat;
+    background-size: 14px 14px;
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 5px;
+}
+
+.yl_footer > div > a {
+    color: #ACA39F;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.yl_footer > p {
+    text-align: right;
+}
+
+/*自定义媒体查询*/
+
+@media (min-width: 770px) and (max-width: 1200px) {
+    .yl_topbar .topbar_header .topbar_brand {
+        height: 80px;
+        padding: 13px 25px;
+    }
+
+    .yl_topbar .topbar_right .topbar_form {
+        display: none;
+        position: absolute;
+        right: 20px;
+        top: 40px;
+        background-color: #23110d;
+        border: 2px solid #3c2c27;
+        padding: 12px 2px 10px 12px;
+        z-index: 1200;
+    }
+
+    .yl_topbar .topbar_right .topbar_book.book {
+        display: block;
+    }
+}
+
+@media (max-width: 769px) {
+    .yl_topbar {
+        position: absolute;
+        height: 160px;
+        padding: 15px 30px;
+        text-align: center;
+    }
+
+    .yl_topbar .topbar_right {
+        display: none;
+    }
+
+    .yl_topbar .topbar_header {
+        float: none;
+    }
+
+    .yl_topbar .yl_container {
+        padding: 0;
+    }
+
+    .yl_topbar .topbar_header .topbar_brand {
+        display: inline-block;
+        margin: 12px 0;
+        background-origin: border-box;
+    }
+
+    .yl_topbar .topbar_header .topbar_toggle, .yl_topbar .topbar_header .icon_info {
+        display: block;
+    }
+
+    .banner {
+        position: absolute;
+        height: auto;
+        padding-bottom: 30px;
+    }
+
+    .banner > .banner_more {
+        height: 80px;
+        line-height: 80px;
+        padding: 20px 0;
+        position: relative;
+    }
+
+    .banner > .banner_more > .arrow {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .banner > .banner_more > .arrow > div:nth-child(2n-1) {
+        width: 60px;
+        height: 33px;
+        background-size: 20px 33px;
+        padding: 0 20px;
+        cursor: pointer;
+        vertical-align: middle;
+    }
+
+    .banner > .banner_more > a {
+        display: none;
+    }
+
+    .banner_images > ul > li > a .banner_images_link {
+        padding: 10px 40px;
+        font-size: 26px;
+    }
+
+    .yl_main_title {
+        padding: 30px 20px 120px;
+    }
+
+    .yl_main_title::after {
+        bottom: 33%;
+        left: 77%;
+    }
+
+    .yl_main_title > .title {
+        font-size: 48px;
+    }
+
+    .yl_main_title > .desc {
+        font-size: 26px;
+    }
+
+    .yl_main_content > .main_content_left {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .yl_main_content > .main_content_right {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .yl_main_content > ul > li {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+
+    .yl_main_content li > a::after {
+        padding: 25px;
+        font-size: 26px;
+    }
+
+    .yl_footer {
+        bottom: -90px;
+        height: 90px;
+        font-size: 16px;
+    }
+
+    .yl_footer > div {
+        display: none;
+    }
+
+    .yl_footer > p {
+        text-align: center;
+        margin-top: 24px;
+    }
+
+    .yl_main_content li > a > .slide_box p {
+        font-size: 32px;
+    }
+}
+

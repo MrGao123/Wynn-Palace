@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        p{
+            margin-top: 1000px;
+        }
+    </style>
+</head>
+<body>
+<p>
+    我是p
+    <img class="lazy" data-original="../images/banner01.jpg">
+</p>
+<script src="../lib/jquery/jquery-1.12.4.js"></script>
+<script src="../lib/jquery_lazyload-1.9.5/jquery.lazyload.min.js"></script>
+<script>
+    $("img.lazy").lazyload();
+</script>
+</body>
+</html>
